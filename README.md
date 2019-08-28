@@ -118,7 +118,7 @@ This theme include somo icons ready to use.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/son-link/jekyll-simple-dark ) or [GitLab](https://gitlab.com/son-link/jekyll-simple-dark)
+Bug reports and pull requests are welcome on [GitHub](https://github.com/son-link/jekyll-dark-ored)
 . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
