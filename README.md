@@ -90,12 +90,12 @@ youtube:
 ```
 Just add the ones you're going to use.
 
-### Responsive iframe for Youtube or Vimeo videos:
+### Responsive iframe for Youtube, Google Maps, etc:
 
-Insert the iframe code into a div whit the class **video** and remove **width** and **height** attributes, like this:
+Insert the iframe code into a div whit the class **resp-iframe** and remove **width** and **height** attributes, like this:
 
 ```html
-<div class="video">
+<div class="resp-iframe">
   <iframe  src="https://www.youtube.com/embed/<videoID>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
@@ -130,6 +130,8 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `simple-dark.gemspec` accordingly.
 
+This theme use [MicroCSS](https://son-link.github.io/microcss/index.html) CSS framework.
+
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [GNU/GPL3](https://opensource.org/licenses/GPL-3.0).

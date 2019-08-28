@@ -16,7 +16,6 @@ Support socials networks links (simple add the links on your _config.yml):
 
 * Facebook
 * Twitter
-* Google+
 * Pinterest
 * Youtube
 * Vimeo
@@ -70,7 +69,6 @@ For activate social links add these lines on your _config.yml:
 social_links: true  # If true show social links
 facebook:
 github:
-gplus:
 instagram:
 linkedin:
 pinterest:
@@ -80,18 +78,18 @@ youtube:
 ```
 Just add the ones you're going to use.
 
-**Note:** gplus is for Google+ link.
+### Responsive iframe for Youtube, Google Maps, etc:
 
-### Responsive iframe for Youtube or Vimeo videos:
-
-Insert the iframe code into a div whit the class **video** and remove **width** and **height** attributes, like this:
+Insert the iframe code into a div whit the class **resp-iframe** and remove **width** and **height** attributes, like this:
 
 ```html
-<div class="video">
+<div class="resp-iframe">
   <iframe  src="https://www.youtube.com/embed/<videoID>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
 
+This theme use [MicroCSS](https://son-link.github.io/microcss/index.html) CSS framework.
+
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [GNU/GPL3](https://opensource.org/licenses/GPL-3.0).
