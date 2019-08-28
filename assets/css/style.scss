@@ -1,0 +1,201 @@
+---
+---
+
+@import 'microcss';
+
+// Colors
+$orange: #D65A31;
+
+body {
+	background: $black;
+	color: $white;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	background: $black;
+	z-index: 5;
+	height: 54px;
+
+	#site-title {
+		font-size: 1.2rem;
+		float: left;
+	}
+
+	#main-nav {
+		float: right;
+	}
+
+	.navbar {
+		line-height: 1;
+		padding: 1rem .5rem;
+		margin-bottom: 0;
+		z-index: 10;
+	}
+}
+
+#home {
+	background: $red;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+
+	#site-desc {
+		font-size: 1.5rem;
+		font-weight: bold;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	h1 {
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+}
+
+a {
+	color: $orange;
+	text-decoration: none;
+
+	&:hover {
+		color: $red;
+	}
+}
+
+footer {
+	background-color: $red;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+
+	a {
+		color: $black;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	#social_links {
+		font-size: 1.5rem;
+		margin-bottom: .5rem;
+	}
+}
+
+#content {
+	width: 90%;
+	max-width: 1024px;
+	margin: auto;
+}
+
+#entries {
+	.entry {
+		padding: .5rem;
+	}
+}
+
+.entry {
+	.entry-title {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.entry-date {
+		display: block;
+		color: $red;
+		margin-bottom: .5rem;
+	}
+
+	.entry-footer {
+		margin-top: .5rem;
+		display: inline-block;
+		width: 100%;
+
+		.entry-tags {
+			float: left;
+		}
+	}
+}
+
+#pagination {
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+table {
+	th, td {
+		border-color: $white;
+	}
+}
+
+#toggle-menu {
+	display: none;
+	float: right;
+}
+
+@media (max-width: 1024px){
+	#home {
+		height: auto;
+
+		#site-desc {
+			position: relative;
+			transform: translate(0, 0);
+			top: 0;
+			left: 0;
+			padding: 1rem;
+		}
+	}
+}
+
+@media (max-width: 639px){
+	table.responsive tr:nth-of-type(2n+2) {
+		background-color: $red;
+	}
+
+	header .navbar {
+		line-height: 1;
+		padding: .5rem;
+		position: relative;
+	}
+
+	#toggle-menu {
+		display: block;
+
+		&.open > i::before {
+			content: '\e800';
+		}
+	}
+
+	#main-nav {
+		position: absolute;
+		float: none;
+		width: 100%;
+		line-height: 2rem;
+		text-align: right;
+		left: 0;
+		width: 100%;
+		background-color: $black;
+		z-index: 10;
+		padding-right: .5rem;
+		max-height: 0;
+		height: auto;
+		overflow: hidden;
+		transition: max-height .3s ease-in-out;
+
+		&.open {
+			max-height: 100vh;
+		}
+	}
+}
+
+@media (max-width: 479px){
+	header #site-desc > h1 {
+		font-size: 2rem;
+		line-height: 1
+	}
+}

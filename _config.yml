@@ -1,0 +1,37 @@
+title: Jekyll Dark Ored
+email: sonlink.dourden@gmail.com
+description: A simple dark orange red theme for Jekyll
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://son-link.github.io/jekyll-simple-dark/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+    input: GFM
+
+# Social Network
+social_links: true # If true show social links
+rss: true
+facebook: 'https://www.facebook.com/Son-Link-Blog-159172270839305/?ref=your_pages'
+twitter: 'https://twitter.com/sonlink'
+github: 'https://github.com/son-link'
+
+plugins:
+- jekyll-paginate
+- jekyll-seo-tag
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+google-analytics: UA-75229203-1
+
+exclude:
+  - vendor
+
+credits: |
+  jekyll-dark-ored &copy; 2019 Alfonso Saavedra "Son Link"<br />
+  This theme and <a href="https://son-link.github.io/microcss/" target="_black">microcss</a> is under the GNU/GPL 3 or newer license.<br />
+  Powered by Jekyll.
