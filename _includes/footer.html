@@ -24,5 +24,24 @@
 	</p>
 </footer>
 </body>
-<script type="text/javascript" src="{{'/assets/js/menu.js' | absolute_url }}"></script>
+<script type="text/javascript" src="{{'/assets/js/simple-jekyll-search.min.js' | absolute_url }}"></script>
+<script type="text/javascript" src="{{'/assets/js/app.js' | absolute_url }}"></script>
+<script type="text/javascript">
+	var sjs = SimpleJekyllSearch({
+		searchInput: qs('#search-input'),
+		resultsContainer: qs('#search-results'),
+		json: '{{ "search.json" | absolute_url }}',
+		searchResultTemplate: '<div class="s-result"><a href="{url}" title="{title}">{title}</a><p>{description}</p></div>',
+	});
+	qs('#search-input').addEventListener('input', function(e){
+		e.preventDefault();
+		search = this.value
+		search = search.trim();
+		if (search.length > 0){
+			sjs.search(this.value);
+		}else{
+			qs('#search-results').innerHTML = ''
+		}
+	})
+</script>
 </html>

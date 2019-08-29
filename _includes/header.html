@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-		<link rel="stylesheet" type="text/css" href="{{ '/assets/css/normalize.css' | absolute_url }}" />
 		<link rel="stylesheet" type="text/css" href="{{ '/assets/css/fontello-embedded.css' | absolute_url }}" />
 		<link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | absolute_url }}" />
 		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}" />
@@ -23,6 +22,7 @@
 				<nav>
 					<a href="{{ site.url }}"><span class="navbar-title float-left" id="site-title">{{ site.title }}</span></a>
 					<a href="#" id="toggle-menu"><i class="icon-menu"></i></a>
+					<a href="#" id="toggle-search" class="icon-search"></a>
 					<div id="main-nav">
 						{% for p in site.pages %}
 							{% if p.title %}
@@ -33,6 +33,13 @@
 				</nav>
 			</div>
 		</header>
+		<div id="search-div">
+			<div id="search">
+				<input id="search-input" autocomplete="off" />
+				<button type="reset"><i class="icon-cancel"></i></button>
+			</div>
+			<div id="search-results"></div>
+		</div>
 		<div id="home">
 			<div id="site-desc">
 				<h1>{{ site.title }}</h1>

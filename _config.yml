@@ -2,7 +2,9 @@ title: Jekyll Dark Ored
 email: sonlink.dourden@gmail.com
 description: A simple dark orange red theme for Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://son-link.github.io/jekyll-dark-ored/" # the base hostname & protocol for your site
+url: "http://son-link.github.io/jekyll-dark-ored/" # the base hostname & protocol for your site
+
+permalink: /:title:output_ext
 
 # Build settings
 markdown: kramdown
@@ -30,6 +32,11 @@ google-analytics: UA-75229203-1
 
 exclude:
   - vendor
+  - screenshot.png
+  - thumbnail.png
+  - '*.gem*'
+  - icons.js
+  - config_fontello.json
 
 credits: |
   jekyll-dark-ored &copy; 2019 Alfonso Saavedra "Son Link"<br />
