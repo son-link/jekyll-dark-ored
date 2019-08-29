@@ -2,7 +2,7 @@ title: Jekyll Dark Ored
 email: sonlink.dourden@gmail.com
 description: A simple dark orange red theme for Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://son-link.github.io/jekyll-dark-ored/" # the base hostname & protocol for your site
+url: "https://son-link.github.io/jekyll-dark-ored/" # the base hostname & protocol for your site
 
 permalink: /:title:output_ext
 
