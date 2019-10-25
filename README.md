@@ -2,7 +2,7 @@
 
 A simple dark orange red theme for Jekyll.
 
-Responsive images, tables, iframes (for include videos of **Youtube**, **Vimeo** or similar services) and other elements thanks to mi CSS framework [MicroCSS](https://son-link.github.io/microcss/)
+Responsive images, tables, iframes (for include videos of **Youtube**, **Vimeo** or similar services) and other elements thanks to my CSS framework [MicroCSS](https://son-link.github.io/microcss/)
 
 A simple pure javascript code for toggle menu and responsive tables.
 
@@ -49,7 +49,7 @@ gem "jekyll-paginator" # This line isn't necessary if you use github-pages
 Add this lines to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-simple-dark
+theme: jekyll-dark-ored
 plugins:
 - jekyll-paginate
 paginate: 5 # Posts per page
@@ -113,8 +113,6 @@ For use you only need add this plugin on the plugins array on **_config.yml**
 
 ### Icons:
 This theme include somo icons ready to use.
-
-
 
 ## Contributing
 

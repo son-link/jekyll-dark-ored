@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# jekyll-simple-dark
+# jekyll-dark-ored
 
 A simple and dark theme for Jekyll. **Under development**
 
@@ -37,14 +37,14 @@ Browser compatibility:
 Add this lines to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-simple-dark"
+gem "jekyll-dark-ored"
 gem "jekyll-paginator" # This line isn't necessary if you use github-pages
 ```
 
 Add this lines to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-simple-dark
+theme: jekyll-dark-ored
 plugins:
 - jekyll-paginate
 paginate: 5 # Posts per page
@@ -59,7 +59,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install simple-dark
+    $ gem install jekyll-dark-ored
 
 ### Social links:
 

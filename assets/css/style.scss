@@ -106,14 +106,18 @@ footer {
 
 .entry {
 	.entry-title {
-		font-size: 1.5rem;
+		display: block;
+		font-size: 2rem;
 		font-weight: bold;
 	}
 
 	.entry-date {
 		display: block;
 		color: $red;
-		margin-bottom: .5rem;
+	}
+
+	.entry-title, .entry-date {
+		margin-bottom: 1rem;
 	}
 
 	.entry-footer {
